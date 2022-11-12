@@ -1,0 +1,209 @@
+@font-face {
+  font-family: Poppins_bold;
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins_Regular;
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+body {
+  background-color: #f5f6fa;
+}
+
+.NPIS_Container {
+  display: flex;
+  width: 100%;
+}
+
+.side_bar_Container {
+  width: 4.5%;
+  padding: 1.4% 0.8% 1.4% 1.2%;
+  /* height: 100vh; */
+  transition: 0.4s ease-in-out;
+  background: linear-gradient(180deg, #74d6b9 0%, rgba(94, 183, 156, 0) 83.72%), #577dc6;
+  overflow: hidden;
+}
+.side_bar_Container.show {
+  width: 16.8%;
+}
+.side_bar_Container .round_parent {
+  width: 7.9%;
+}
+.side_bar_Container .round_parent .round {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+}
+.side_bar_Container .NPIS_logo_container {
+  padding-bottom: 2.2rem;
+  align-items: center;
+}
+.side_bar_Container .NPIS_logo_container .NPIS_logo {
+  cursor: pointer;
+}
+.side_bar_Container .NPIS_logo_container .NPIS_logo_right_content {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  transition: 0.4s ease-in-out;
+}
+.side_bar_Container .NPIS_logo_container .NPIS_logo_right_content h3 {
+  padding: 0 1rem;
+  font-size: 1.55rem;
+  font-weight: bold;
+  font-family: Poppins_bold;
+  margin: 0;
+}
+.side_bar_Container .NPIS_logo_container .NPIS_logo_right_content.active {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.side_bar_Container h3.Modul {
+  color: #fff;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  font-family: Poppins_Bold;
+  padding-bottom: 0.5rem;
+}
+.side_bar_Container .round_parent {
+  width: 8.9%;
+}
+.side_bar_Container .round_parent .round {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content {
+  padding: 0.8rem 0.4rem;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .sidebar_icon {
+  cursor: pointer;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list {
+  width: 100%;
+  padding-left: 0.8rem;
+  transition: 0.4s ease-in-out;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header {
+  padding: 0rem 0.4rem;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #f4f9fa;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: Poppins_Regular;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link .sidebar_icon_Container .sidebar_icon_right_content {
+  width: 100%;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link .sidebar_icon_Container .sidebar_icon_right_content .sb_contents {
+  width: 100%;
+  justify-content: space-between;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link .sidebar_icon_Container .sidebar_icon_right_content .sb_contents p {
+  padding-top: 0.3rem;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link .sidebar_icon_Container .sidebar_icon_right_content .sb_contents .d_arrow {
+  transform: rotate(270deg);
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link .sidebar_icon_Container .sidebar_icon_right_content .sb_contents .d_arrow.active {
+  transform: rotate(0);
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .Accordian-header a.Accordian_link p {
+  margin: 0;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .accordian_collapse_list ul {
+  padding: 0 0.35rem;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .accordian_collapse_list ul li:nth-child(1) a {
+  padding-top: 1rem;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .accordian_collapse_list ul li a {
+  text-decoration: none;
+  display: block;
+  width: 80%;
+  padding: 0.3rem 0;
+  font-size: 0.86rem;
+  color: #f4f9fa;
+  font-family: Poppins_Regular;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list .accordian_collapse_list ul li a:hover {
+  font-weight: 600;
+}
+.side_bar_Container .sidebar_list_container #accordionParent .accordian_content .accordian_single_list.active {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.side_bar_Container .sidebar_list_container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.Mainbody_conatiner {
+  width: 83.2%;
+}
+.Mainbody_conatiner.active {
+  width: 95.5%;
+}
+.Mainbody_conatiner header nav {
+  background-color: #fff;
+  padding: 0.9rem 1.2rem;
+}
+.Mainbody_conatiner header nav .nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_left_Input_content {
+  width: 25%;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_left_Input_content input {
+  border: none;
+  border-radius: 0;
+  height: 47px;
+  background-color: #f5f6fa;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_left_Input_content button {
+  border-radius: 0 3px 3px 0;
+  background-color: #39b0d2;
+  color: #fff;
+  border: none;
+  font-family: Poppins_Regular;
+  padding: 0 1.8rem;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_right_content .Nav_right_img_content {
+  align-items: center;
+  gap: 1.6rem;
+  padding: 0 1rem;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_right_content .profile_container {
+  background-color: #faf9fe;
+  border-left: 1px solid #f6f6f6;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0rem 3rem 0rem 2rem;
+  margin-top:-20px;
+  margin-right:-19px;
+  margin-bottom:-14px;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_right_content .profile_container .profile_content h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #747ba3;
+}
+.Mainbody_conatiner header nav .nav_bar .Nav_right_content .profile_container .profile_content p {
+  font-size: 0.8rem;
+  color: #a3adb1;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
